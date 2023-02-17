@@ -1,0 +1,23 @@
+<div class="grid">
+    <div class="col-12">
+        <div class="card" *ngIf="prot">
+            <p-table #dt1 [loading]="loading" [value]="prot" [rows]="25" [paginator]="true">
+                <ng-template pTemplate="header">
+                    <tr>
+                        <th>Name</th>
+                        <th>Aufwachzeit</th>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-protocol>
+                    <tr>
+                        {{protocol.Kind.Name}}
+                    </tr>
+                    <tr>
+                        {{protocol.AufwachzeitMorgens | date: 'dd.MM.yyyy HH:mm'}}
+                    </tr>
+                </ng-template>
+            </p-table>
+        </div>
+    </div>
+
+</div>

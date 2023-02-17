@@ -1,0 +1,25 @@
+[
+    {
+        "timestamp": "20230217 22:30",
+        "AufwachzeitMorgens": "0730",
+        "Aufgeweckt": false,
+        "Mittagsschlaf": true,
+        "MittagsschlafBegin": "12:30",
+        "MittagsschlafEnde": "13:30",
+        "Befinden": "Vormittags\nschlecht gelaunt.",
+        "AktivitaetVorSchlafenszeit": "Baden\nin\nder\nBadewanne.",
+        "SchlafRitualBeginn": "20:00",
+        "SchlafRitualEnde": "20:30",
+        "SchlafRitualKommentar": "Hat\nsuper\nfunktioniert",
+        "AktivitaetNachSchlafenszeit": "Fernsehschauen\nbis\nzum\nUmfallen",
+        "EinschlafzeitNachRitual": "23:00",
+        "NaechtlichesAufwachen": "Ist mehrfach\naufgewacht",
+        "AuffaelligkeitenImSchlaf": "Hat\nsich\nmehrfach gedreht",
+        "SchlafDauerNacht": "12",
+        "SchlafDauerGesamt": "13",
+        "Kind":{
+            "Name": "John",
+            "Alter": 2
+        }
+    }
+]

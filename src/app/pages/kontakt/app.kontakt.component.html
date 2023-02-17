@@ -1,0 +1,24 @@
+<div class="grid p-fluid">
+<div class="col-12">
+        <div class="card no-margin">
+            <h1>Kontakt</h1>
+            <div class="field col-12 md:col-4">
+                <span class="p-float-label">
+                    <input [(ngModel)]="mailSubject" type="text" id="text" pInputText>
+                    <label for="text">Betreff</label>
+                </span>
+            </div>
+            <div class="field col-12 md:col-4">
+                <span class="p-float-label">
+                    <textarea [(ngModel)]="mailBody" [autoResize]="true" type="text" id="text" pInputTextarea rows="10" cols="30"></textarea>
+                    <label for="text">Anfrage</label>
+                </span>
+            </div>
+            <div class="field col-12 md:col-4">
+                <h5>Ich erkläre mich damit einverstanden, dass die übermittelten Daten verarbeitet werden.</h5>
+                <p-toggleButton [(ngModel)]="privacyConfirmed" onLabel="Akzeptiert" offLabel="Abgelehnt" onIcon="pi-check" offIcon="pi pi-times" (style)="privacyConfirmed ? {'width': '10em', 'background-color': 'green'} : {'width': '10em', 'background-color': 'red'}" [style]="privacyConfirmed ? {'width': '10em', 'background-color': 'green'} : {'width': '10em', 'background-color': 'red'}"></p-toggleButton>
+            </div>
+            <p-button [(disabled)]="!this.privacyConfirmed || !this.mailBody || !this.mailBody" (click)="sendMail()" label="Senden"></p-button>
+        </div>
+    </div>
+</div>
